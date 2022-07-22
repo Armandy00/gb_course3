@@ -36,7 +36,7 @@ public class FruitBox<T extends Fruit> {
 
     }
 
-    public void transfer(FruitBox<T> box) {
+    public void transfer(FruitBox<? super T> box)  {
         if (this == box) {
             return;
         }
